@@ -29,9 +29,16 @@ a{
 .clear{
 	clear: both;
 }
-.banner-split.left .button:hover{
+/*.banner-split.left .button:hover{
 	background-color: var(--left-button-hover-color);
 	border-color: var(--left-button-hover-color);
+}*/
+.banner-split.left {
+    -webkit-transition: width 0s, height 0s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0s;
+}
+.banner-split.left:hover{
+    width: 54%;
 }
 .banner-split.right .button:hover{
 	background-color: var(--right-button-hover-color);

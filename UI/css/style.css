@@ -1469,9 +1469,13 @@ div.questioner-form-field{
 		font-size: 10px;
 	}
 	.login-section p a {
-		font-size: 10px;
+		font-size: 8px;
 	}
 @media(max-width: 360px){
+	.footer-align {
+		margin-left: -6% !important;
+		font-size: 9px !important;
+	}
 	.logo{
 		font-size: 35px;
 		margin-left: 5%;

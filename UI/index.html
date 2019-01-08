@@ -143,7 +143,7 @@
 	<div id="footer-bottom">
 		<p>&copy;<script>document.write(new Date().getFullYear());</script> <a href="#">Crowd-source questions for a meetup </a></p>
 	</div>
-		<a id="back-to-top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+		<a id="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 	<script type="text/javascript">
 		var scrollBtn = document.getElementById("back-to-top"),
 		body = document.body,
@@ -159,14 +159,7 @@
 			scrollPos = body.scrollTop || docElem.scrollTop;
 			scrollBtn.className = (scrollPos > offset) ? "visible" : "";
 		});
-		scrollBtn.addEventListener("click", function(e) {
-			e.preventDefault();
-			if(isFirefox){
-				docElem.scrollTop = 0;
-			}else{
-				body.scrollTop = 0;
-			}
-		});
+		
 	</script>
 </body>
 </html>

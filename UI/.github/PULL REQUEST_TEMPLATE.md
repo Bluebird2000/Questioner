@@ -1,5 +1,7 @@
-#### What does this PR do?
-* This PR is the implementation of UI feedback
+#### What the PR does ?
+- Implementation on UI feedback
+
+#### Description of Task to be completed?
 - Add Signup page link on the index page
 - Css implementation(transition on login page)
 - Add Back link to login and signup page
@@ -9,13 +11,18 @@
 - Add create meetup link to Admin Dashboard 
 - Implement UI (Admin Delete meetup page)
 
-
-#### Description of Task completed?
-- Feedback implementation completed for UI
-
 #### How should this be manually tested?
 
-#### What are the relevant pivotal tracker stories?(if applicable)
-- User should be able to click on signup button from the index page
-- User should be able to navigate back to index page easily from login 
-- User should be able to see a date a meetup was created
+#### Any background context you want to provide?
+- None
+
+#### What are the relevant pivotal tracker stories?
+- #163043759
+
+#### Screenshots (if appropriate)
+- None
+
+#### Questions:
+- No question
+
+#### How should this be manually tested?

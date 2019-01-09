@@ -1088,6 +1088,9 @@ p.meetup-content{
     box-shadow: 0px 0px 5px 1px #f7f7f7;
     z-index: 999;
 }
+.specific-meetup-questions h4 {
+	margin-left: 1% !important;
+}
 .specific-meetup-questions i {
 	cursor: pointer;
 }
@@ -1121,7 +1124,7 @@ p.meetup-content{
 	display: block;
 }*/
 .questioner-post-wrapper{
-	margin-left: 15%;
+	margin-left: 12%;
 	margin-top: -10%;
 	margin-bottom: 10%;
 
@@ -1134,7 +1137,6 @@ p.meetup-content{
 	color: #fff;
 	border:none;
 	border-radius: 100%;
-	padding: 1em;
 	text-transform: uppercase;
 	cursor: pointer;
 	font-weight: 700;
@@ -1142,8 +1144,31 @@ p.meetup-content{
 	transition: all .3s ease-in-out;
 	display: inline-block;
 	cursor: pointer;
-	padding:18px;
+	padding:5px;
 	transition: .4s;
+}
+.specific-meetup-questions textarea {
+	width: 100%;
+	  padding: 0px 2px;
+	  max-height: 10% !important;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  background-color: #f9f9f9;
+	  resize: none;
+	  margin-left: 0%;
+}
+
+.questioner-post-wrapper textarea{
+	  width: 91%;
+	  padding: 12px 20px;
+	  max-height: 30%;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  background-color: #f9f9f9;
+	  resize: none;
+	  margin-left: -2%;
 }
 .questioner-post-wrapper-comment span.accordion{
 	background-color: #000;

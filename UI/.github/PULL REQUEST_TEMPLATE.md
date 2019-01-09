@@ -1,5 +1,5 @@
 #### What does this PR do?
-* This PR is the implementation of feedback
+* This PR is the implementation of UI feedback
 - Add Signup page link on the index page
 - Css implementation(transition on login page)
 - Add Back link to login and signup page
@@ -15,15 +15,7 @@
 
 #### How should this be manually tested?
 
-#### Any background context you want to provide?
-
 #### What are the relevant pivotal tracker stories?(if applicable)
 - User should be able to click on signup button from the index page
 - User should be able to navigate back to index page easily from login 
 - User should be able to see a date a meetup was created
-- 
-
-
-
-var a = [c, a, b];
-var { a } = c;

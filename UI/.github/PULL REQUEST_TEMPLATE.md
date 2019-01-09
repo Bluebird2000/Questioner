@@ -12,6 +12,7 @@
 - Implement UI (Admin Delete meetup page)
 
 #### How should this be manually tested?
+- Once its been merged to gh-pages
 
 #### Any background context you want to provide?
 - None
@@ -24,5 +25,3 @@
 
 #### Questions:
 - No question
-
-#### How should this be manually tested?

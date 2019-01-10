@@ -183,3 +183,43 @@ p.footer-bottom-flat{
 	transition: all 1s;
 	max-height: inherit;
 }
+
+#questions-wrapper-banner {
+	background-color: #f7f7f7;
+	width: 100%;
+	height: 100%;
+}
+#meetup-question-section-wrapper{
+	margin-top: -5% !important;
+	width: 90%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin: auto;
+	height: auto;
+}
+
+
+.delete-meetup-record{
+	width: 25%;
+	float: left;
+	margin-left: 1%;
+	padding: 2%;
+	background: #eeeeee;
+	margin-bottom: 2%;
+	-webkit-box-shadow: 0px 0px 5px 1px #f7f7f7;
+	-moz-box-shadow: 0px 0px 5px 1px #f7f7f7;
+	-o-box-shadow: 0px 0px 5px 1px #f7f7f7;
+	-ms-box-shadow: 0px 0px 5px 1px #f7f7f7;
+    box-shadow: 0px 0px 5px 1px #f7f7f7;
+    border-left: 5px solid #ccc;
+}
+.section-delete-record p {
+	font-size: 14px;
+	line-height: 25px;
+}
+.meetup-delete-button button {
+	padding: 2%;
+	background-color: #ffffff;
+	cursor: pointer;
+	border:none;
+}

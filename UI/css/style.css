@@ -29,9 +29,16 @@ a{
 .clear{
 	clear: both;
 }
-.banner-split.left .button:hover{
+/*.banner-split.left .button:hover{
 	background-color: var(--left-button-hover-color);
 	border-color: var(--left-button-hover-color);
+}*/
+.banner-split.left {
+    -webkit-transition: width 0s, height 0s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0s;
+}
+.banner-split.left:hover{
+    width: 54%;
 }
 .banner-split.right .button:hover{
 	background-color: var(--right-button-hover-color);
@@ -318,7 +325,95 @@ header, .content{
 	transform:rotateZ(-10deg);
 	transform-origin: bottom left; 
 }
+.questioner-banner{
+	position: absolute;
+	height: 80%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background:linear-gradient(to right, #730099 0%, #730099 20%, #730099 50%);
+	transform-origin: bottom left; 
+}
+#questions-wrapper-banner {
+	background-color: #f7f7f7;
+	width: 100%;
+	height: 100%;
+}
+#meetup-question-section-wrapper{
+	margin-top: -5% !important;
+	width: 90%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin: auto;
+	height: auto;
+}
 
+.meetup-left-section{
+	width: 70%;
+	float: left;
+	background: #eeeeee;
+	margin-bottom: 2%;
+	-webkit-box-shadow: 0px 0px 5px 1px #f7f7f7;
+	-moz-box-shadow: 0px 0px 5px 1px #f7f7f7;
+	-o-box-shadow: 0px 0px 5px 1px #f7f7f7;
+	-ms-box-shadow: 0px 0px 5px 1px #f7f7f7;
+    box-shadow: 0px 0px 5px 1px #f7f7f7;
+	padding: 2%;
+	border-left: 5px solid #9816f4;
+}
+.meetup-left-section h4{
+	float: right;
+	font-size: 13px;
+	padding: .5%;
+	margin-top: -5%;	
+}
+.meetup-left-section p {
+	padding-bottom: 2%;
+	letter-spacing: .3px;
+	line-height: 22px;
+}
+.inline-actions ul {
+	list-style-type: none;
+}
+.inline-actions ul li {
+	display: inline-block;
+	padding-right: 2%;
+}
+.inline-actions ul li a {
+	color: #9816f4;
+	font-size: 14px;
+}
+
+.meetup-right-section{
+	width: 20%;
+	border-right: 5px solid #9816f4;
+	background: #ffffff;
+	padding: 2%;
+	float: right;
+	margin-bottom: 2%;
+}
+.meetup-left-section img{
+	padding-right: 2%;
+}
+.meetup-right-section .ask-question{
+	color: red;
+	text-align: center;
+	background: #f7f7f7;
+	padding: .5%;
+	border-radius: 50px;
+	width: 100%;
+	margin-bottom: 5%;
+	cursor: pointer;
+}
+.meetup-right-section .ask-question p {
+	color: red;
+	text-align: center;
+}
+.post-questions-field{
+	width: 70%;
+	margin: auto;
+
+}
 #questioner-services{
 	margin-top: 2%;
 	width: 100%;
@@ -923,6 +1018,12 @@ p.meetup-content{
     box-shadow: 0px 0px 5px 1px #f7f7f7;
     z-index: 999;
 }
+.specific-meetup-questions h4 {
+	margin-left: 1% !important;
+}
+.specific-meetup-questions i {
+	cursor: pointer;
+}
 #questioner-questions-wrapper .specific-meetup-questions .questioner-username{
 	color: #730099;
 }
@@ -953,7 +1054,7 @@ p.meetup-content{
 	display: block;
 }*/
 .questioner-post-wrapper{
-	margin-left: 15%;
+	margin-left: 12%;
 	margin-top: -10%;
 	margin-bottom: 10%;
 
@@ -966,7 +1067,6 @@ p.meetup-content{
 	color: #fff;
 	border:none;
 	border-radius: 100%;
-	padding: 1em;
 	text-transform: uppercase;
 	cursor: pointer;
 	font-weight: 700;
@@ -974,8 +1074,31 @@ p.meetup-content{
 	transition: all .3s ease-in-out;
 	display: inline-block;
 	cursor: pointer;
-	padding:18px;
+	padding:5px;
 	transition: .4s;
+}
+.specific-meetup-questions textarea {
+	width: 100%;
+	  padding: 0px 2px;
+	  max-height: 10% !important;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  background-color: #f9f9f9;
+	  resize: none;
+	  margin-left: 0%;
+}
+
+.questioner-post-wrapper textarea{
+	  width: 91%;
+	  padding: 12px 20px;
+	  max-height: 30%;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  background-color: #f9f9f9;
+	  resize: none;
+	  margin-left: -2%;
 }
 .questioner-post-wrapper-comment span.accordion{
 	background-color: #000;
@@ -1469,9 +1592,13 @@ div.questioner-form-field{
 		font-size: 10px;
 	}
 	.login-section p a {
-		font-size: 10px;
+		font-size: 8px;
 	}
 @media(max-width: 360px){
+	.footer-align {
+		margin-left: -6% !important;
+		font-size: 9px !important;
+	}
 	.logo{
 		font-size: 35px;
 		margin-left: 5%;

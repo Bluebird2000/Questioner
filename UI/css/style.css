@@ -676,7 +676,21 @@ p.meetup-content{
 	text-align: center;
 }
 
-
+.feed-section {
+	background: #eee;
+	height: auto;
+	width: 80%;
+	margin-left: 5%;
+	border-left: 6px solid #9816f4;
+	padding: .5%;
+	margin-bottom: 2%;
+}
+.qestions-feed-rows {
+}
+.feed-created-by {
+	font-weight: bolder !important;
+	color: #9816f4;
+}
 #all-meetup-section{
 	background:url('../img/login-banner.jpg') no-repeat center center;
 	height: 50%;

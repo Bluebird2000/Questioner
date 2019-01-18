@@ -686,7 +686,8 @@ p.meetup-content{
 	margin-bottom: 2%;
 }
 .qestions-feed-rows {
-}
+	padding-left: 5%;
+}	
 .feed-created-by {
 	font-weight: bolder !important;
 	color: #9816f4;
@@ -780,6 +781,7 @@ p.meetup-content{
 	width: 100%;
 	height: auto;
 	margin:auto;
+	margin-top: 5%;
 	background-color: #303038;
 	padding: 20px 0px;
 }
@@ -1053,7 +1055,15 @@ p.meetup-content{
 .post-question{
 	padding-left: 10%;
 }
-
+#create {
+	margin-top: 2%;
+	background: #9816f4;
+	border: none;
+	padding: 1%;
+	color: #fff;
+	width: 10%;
+	cursor: pointer;
+}
 
 /*#questioner-questions-wrapper section p{
 	display: none;
